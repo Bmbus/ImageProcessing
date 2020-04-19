@@ -3,8 +3,8 @@
 This script greyscale all pixels, exapt of the yellow ones (blossom).
 
 ## Result:
-Original:
+Original: <br>
 <img src="input.jpg" width="500px"/>
 
-After:
+After: <br>
 <img src="output.jpg" width="500px"/>
