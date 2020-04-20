@@ -19,7 +19,7 @@ def process():
            if r>=200 and g >= 135 and b<140:
                yellow_pixels.append({"color": (r,g,b), "size": (x,y)})
                 
-    greyscale_img = img.convert("1")
+    greyscale_img = img.convert("LA")
     new_img = Image.new("RGB", greyscale_img.size)
     new_img.paste(greyscale_img)
  

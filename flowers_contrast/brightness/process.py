@@ -11,13 +11,13 @@ def process():
     for x in range(width):
        for y in range(height):
            r,g,b = pixels[x, y]
-           # SEARCH FOR YELLOW COLORS
+           
            pixel = img.getpixel((x,y))
            #print(pixel)
            if pixel >= (200,200,200): 
                yellow_pixels.append({"color": (r,g,b), "size": (x,y)})
                 
-    greyscale_img = img.convert("1")
+    greyscale_img = img.convert("LA")
     new_img = Image.new("RGB", greyscale_img.size)
     new_img.paste(greyscale_img)
  
